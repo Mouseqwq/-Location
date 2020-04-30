@@ -1,0 +1,62 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin : 0;
+                padding : 0;
+                box-sizing : border-box;
+            }
+            .modal{
+            position: fixed;
+            top:0;
+            bottom:0;
+            left:0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: none;
+            }
+            .modal:target {
+            display: block;
+            }
+            .modal .box{
+                position: absolute;
+                width: 30%;
+                max-height: 500px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                max-height: 500px;
+                background: #fff;
+            }
+            .modal .box > h2{
+                padding: 10px;
+                border-bottom: 1px solid #cccccc;
+            }
+            .modal .box .close{
+                float: right;
+                font-size: 16px;
+                margin-top: 8px;
+                text-decoration: none;
+            }
+            .modal .box .content{
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#model">点我</a>
+    <div class="modal" id="model">
+        <div class="box">
+            <h2>这个是标题鸭 <a href="#" class="close">X</a></h2>
+            <div class="content">
+                <p>我是内容呢</p>
+                <p>可以摆放图片的呢</p>
+            </div>
+        </div>
+    </div> 
+    </body>
+    </html>

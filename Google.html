@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet"//at.alicdn.com/t/font_1749907_wgyjlcwqz2b.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .logo {
+            width:275px;
+            height:100px;
+            margin: 100px auto 0 auto;
+            background: url(https://i.loli.net/2019/11/14/LVkXcBibEjh9s6v.png) center center no-repeat;
+            background-size:contain;
+        }
+
+        .search {
+            position: relative;
+            max-width: 582px;
+            height: 40px;
+            margin: 25px auto;
+            box-shadow: 0 0 0 1px #ccc;
+            border-radius: 25px;
+        }
+
+        .search > .icon-search {
+            position: absolute;
+            left: 20px;
+            /*下面的写法实现垂直居中更好*/
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+            font-size: 16px;
+        }
+
+        .search > input {
+            height: 100%;
+            width: 100%;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            border-radius: 25px;
+            padding: 0 45px;
+        }
+        .search > .icon-mic{
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ccc;
+            font-size: 16px;
+        }
+        .search:hover {
+            box-shadow: 0 0 4px 0px #ccc;
+        }
+        .qwq{
+            text-align: center;
+            color:#ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo"></div>
+    <div class="search">
+        <span class="iconfont icon-search"></span>
+        <input type="search">
+        <span class="iconfont icon-mic"></span>
+    </div>
+    <div class="qwq">qwq</div>
+</body>
+</html>
